@@ -5,7 +5,13 @@
   - [a. Create a new database](#a-create-a-new-database)
   - [b. Restore an existing database](#b-restore-an-existing-database)
 - [Data Analysis](#data-analysis)
+  - [a. Count of Students by Department](#a-count-of-students-by-department)
+  - [b. Total Enrollment by Year](#b-total-enrollment-by-year)
+  - [c. Average GPA by Course](#c-average-gpa-by-course)
 - [Query (Breakdown, Rollup, or Cube)](#query-breakdown-rollup-or-cube)
+  - [a. Breakdown by Department](#a-breakdown-by-department)
+  - [b. Rollup by Year and Department](#b-rollup-by-year-and-department)
+  - [c. Cube by Course, Year, and Department](#c-cube-by-course-year-and-department)
 - [Result Reports with Charts or Graphs](#result-reports-with-charts-or-graphs)
   - [Data Visualization](#a-data-visualization)
 
@@ -13,19 +19,19 @@
 
 The "University Database Analysis Project" is designed to evaluate proficiency in SQL, database creation, restoration, data analysis, and result reporting. The project allows flexibility in choosing any database for analysis. The examples and tasks are based on a hypothetical university database named "UniversityDB."
 
-I am using Microsoft SQL Server database, but feel free to substitute it with a database of your choice.
+I am using **Microsoft SQL Server** database, but feel free to substitute it with a database of your choice.
 
 ## Database Creation or Restoration
 
 ### a. Create a new database:
 
-- Create a new database using the SQL commands in creation.sql file in sql directory.
+- Create a new database using the SQL commands in **creation.sql** file in **sql** directory.
 
-- Use the SQL commands in insertion.sql file in sql directory to insert some dummy data to get started.
+- Use the SQL commands in **insertion.sql** file in **sql** directory to insert some dummy data to get started.
 
 ### b. Restore an existing database:
 
-- Use the backup.sql file in backup directory to restore the database using the UniversityDB.bak file. 
+- Use the **backup.sql** file in **backup** directory to restore the database using the **UniversityDB.bak** file. 
 
 ## Data Analysis
 
@@ -257,7 +263,7 @@ I am using Microsoft SQL Server database, but feel free to substitute it with a 
 
 Using PowerBI, the database is connected so graphs and diagrams are generated to visualize the data.
 
-In visuals directory a dataVisualization.pbix file is present and contains multiple graphs to show data visually to be more live and analytic.
+In **visuals** directory a **dataVisualization.pbix** file is present and contains multiple graphs to show data visually to be more live and analytic.
 
 
 ---
