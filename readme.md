@@ -208,48 +208,48 @@ I am using Microsoft SQL Server database, but feel free to substitute it with a 
         Algorithms	                2023	Mathematics	        1	4.000000
             	                        2023	Mathematics	        1	4.000000
             	                            	Mathematics	        4	3.750000
-        Classical Mechanics	        2022	Physics	            1	4.000000
-        Electromagnetism	        2022	Physics	            1	4.000000
-        Organic Chemistry	        2022	Physics	            1	3.300000
-            	                        2022	Physics	            3	3.766666
-        Algorithms	                2023	Physics	            1	2.700000
-            	                        2023	Physics	            1	2.700000
-            	                            	Physics	            4	3.500000
-            	                            	    	            12	3.558333
+        Classical Mechanics	        2022	Physics	                1	4.000000
+        Electromagnetism	        2022	Physics	                1	4.000000
+        Organic Chemistry	        2022	Physics	                1	3.300000
+            	                        2022	Physics	                3	3.766666
+        Algorithms	                2023	Physics	                1	2.700000
+            	                        2023	Physics	                1	2.700000
+            	                            	Physics	                4	3.500000
+            	                            	    	                12	3.558333
         Algorithms	                    	Mathematics	        1	4.000000
-        Algorithms	                    	Physics	            1	2.700000
-        Algorithms	                    	    	            2	3.350000
+        Algorithms	                    	Physics	                1	2.700000
+        Algorithms	                    	    	                2	3.350000
         Calculus I	                    	Computer Science	1	3.000000
-        Calculus I	                    	    	            1	3.000000
-        Classical Mechanics	            	Physics	            1	4.000000
-        Classical Mechanics	            	    	            1	4.000000
+        Calculus I	                    	    	                1	3.000000
+        Classical Mechanics	            	Physics	                1	4.000000
+        Classical Mechanics	            	    	                1	4.000000
         Data Structures	                Computer Science	1	3.700000
         Data Structures	                	    	        1	3.700000
         Database Management	            	Mathematics	        1	3.300000
-        Database Management	            	    	            1	3.300000
-        Electromagnetism	                Physics	            1	4.000000
+        Database Management	            	    	                1	3.300000
+        Electromagnetism	                Physics	                1	4.000000
         Electromagnetism	                	    	        1	4.000000
         Genetics	                        Mathematics	        1	4.000000
         Genetics	                        	    	        1	4.000000
         Introduction to Programming	    	Computer Science	1	4.000000
-        Introduction to Programming	    	    	            1	4.000000
+        Introduction to Programming	    	    	                1	4.000000
         Linear Algebra	                Mathematics	        1	3.700000
         Linear Algebra	                	    	        1	3.700000
-        Organic Chemistry	               Computer Science	1	3.000000
-        Organic Chemistry	                Physics	            1	3.300000
+        Organic Chemistry	               Computer Science	        1	3.000000
+        Organic Chemistry	                Physics	                1	3.300000
         Organic Chemistry	                	    	        2	3.150000
-        Calculus I	                2022	    	            1	3.000000
-        Classical Mechanics	        2022	    	            1	4.000000
-        Database Management	        2022	    	            1	3.300000
-        Electromagnetism	        2022	    	            1	4.000000
-        Genetics	                2022	    	            1	4.000000
-        Introduction to Programming	2022	    	            1	4.000000
-        Linear Algebra	        2022	    	            1	3.700000
-        Organic Chemistry	        2022	    	            2	3.150000
-            	                        2022	    	            9	3.588888
-        Algorithms	                2023	    	            2	3.350000
-        Data Structures	        2023	    	            1	3.700000
-            	                        2023	    	            3	3.466666
+        Calculus I	                2022	    	                1	3.000000
+        Classical Mechanics	        2022	    	                1	4.000000
+        Database Management	        2022	    	                1	3.300000
+        Electromagnetism	        2022	    	                1	4.000000
+        Genetics	                2022	    	                1	4.000000
+        Introduction to Programming	2022	    	                1	4.000000
+        Linear Algebra	        2022	    	                1	3.700000
+        Organic Chemistry	        2022	    	                2	3.150000
+            	                        2022	    	                9	3.588888
+        Algorithms	                2023	    	                2	3.350000
+        Data Structures	        2023	    	                1	3.700000
+            	                        2023	    	                3	3.466666
 
 ## Result Reports with Charts or Graphs
 
