@@ -1,3 +1,5 @@
+-- Data Insertion
+
 -- Add records to Departments table
 INSERT INTO Departments (DepartmentID, DepartmentName)
 VALUES

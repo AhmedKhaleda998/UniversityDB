@@ -1,3 +1,5 @@
+-- Database Creation
+
 -- Create UniversityDB database
 CREATE DATABASE UniversityDB;
 

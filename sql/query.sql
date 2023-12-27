@@ -1,3 +1,5 @@
+-- Data Analysis: Query (Breakdown, Rollup, or Cube)
+
 -- Breakdown by Department
 SELECT 
     DepartmentName, 

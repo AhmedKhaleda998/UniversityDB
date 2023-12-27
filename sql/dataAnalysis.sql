@@ -1,3 +1,5 @@
+-- Data Analysis
+
 -- Count of Students by Department
 SELECT
     DepartmentName,
