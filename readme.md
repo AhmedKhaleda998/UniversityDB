@@ -1,5 +1,14 @@
 # University Database Analysis Project
 
+- [Introduction](#introduction)
+- [Database Creation or Restoration](#database-creation-or-restoration)
+  - [a. Create a new database](#a-create-a-new-database)
+  - [b. Restore an existing database](#b-restore-an-existing-database)
+- [Data Analysis](#data-analysis)
+- [Query (Breakdown, Rollup, or Cube)](#query-breakdown-rollup-or-cube)
+- [Result Reports with Charts or Graphs](#result-reports-with-charts-or-graphs)
+  - [Data Visualization](#a-data-visualization)
+
 ## Introduction
 
 The "University Database Analysis Project" is designed to evaluate proficiency in SQL, database creation, restoration, data analysis, and result reporting. The project allows flexibility in choosing any database for analysis. The examples and tasks are based on a hypothetical university database named "UniversityDB."
@@ -80,13 +89,13 @@ I am using Microsoft SQL Server database, but feel free to substitute it with a 
         Algorithms	                3.600000        3.350000
         Calculus I	                3.500000        3.000000
         Classical Mechanics	        3.800000        4.000000
-        Data Structures	            3.600000        3.700000
+        Data Structures	        3.600000        3.700000
         Database Management	        3.200000        3.300000
-        Electromagnetism	            3.800000        4.000000
-        Genetics	                    3.900000        4.000000
+        Electromagnetism	        3.800000        4.000000
+        Genetics	                3.900000        4.000000
         Introduction to Programming	3.500000        4.000000
-        Linear Algebra	            3.200000        3.700000
-        Organic Chemistry	            3.450000        3.150000
+        Linear Algebra	        3.200000        3.700000
+        Organic Chemistry	        3.450000        3.150000
 
 **Average Course Grade by Course**
 
@@ -107,12 +116,12 @@ I am using Microsoft SQL Server database, but feel free to substitute it with a 
         101	        Introduction to Programming	        4.000000
         102	        Database Management	                3.300000
         201	        Calculus I	                        3.000000
-        202	        Linear Algebra	                    3.700000
+        202	        Linear Algebra	                        3.700000
         301	        Classical Mechanics	                4.000000
         302	        Electromagnetism	                4.000000
         401	        Organic Chemistry	                3.150000
         402	        Genetics	                        4.000000
-        501	        Data Structures	                    3.700000
+        501	        Data Structures	                        3.700000
         502	        Algorithms	                        3.350000
 
 ## Query (Breakdown, Rollup, or Cube)
@@ -132,9 +141,9 @@ I am using Microsoft SQL Server database, but feel free to substitute it with a 
 - Output:
 
         DepartmentName      EnrollmentCount
-        Computer Science	        2
+        Computer Science	    2
         Mathematics	            2
-        Physics	                2
+        Physics	            2
         Total                     6
 
 ### b. Rollup by Year and Department:
@@ -157,13 +166,13 @@ I am using Microsoft SQL Server database, but feel free to substitute it with a 
         Year  DepartmentName  EnrollmentCount     AverageCourseGrade
         2022	Computer Science	3	                3.333333
         2022	Mathematics	        3	                3.666666
-        2022	Physics	            3	                3.766666
-        2022	    	            9	                3.588888
+        2022	Physics	                3	                3.766666
+        2022	    	                9	                3.588888
         2023	Computer Science	1	                3.700000
         2023	Mathematics	        1	                4.000000
-        2023	Physics	            1	                2.700000
-        2023	    	            3	                3.466666
-        Total	    	            12	                3.558333
+        2023	Physics	                1	                2.700000
+        2023	    	                3	                3.466666
+        Total	    	                12	                3.558333
 
 ### c. Cube by Course, Year, and Department:
 
@@ -187,57 +196,70 @@ I am using Microsoft SQL Server database, but feel free to substitute it with a 
         CourseName                    Year    DepartmentName      EnrollmentCount     AverageCourseGrade
         Calculus I	                2022	Computer Science	1	3.000000
         Introduction to Programming	2022	Computer Science	1	4.000000
-        Organic Chemistry	            2022	Computer Science	1	3.000000
-        NULL	                        2022	Computer Science	3	3.333333
-        Data Structures	            2023	Computer Science	1	3.700000
-        NULL	                        2023	Computer Science	1	3.700000
-        NULL	                        NULL	Computer Science	4	3.425000
+        Organic Chemistry	        2022	Computer Science	1	3.000000
+            	                        2022	Computer Science	3	3.333333
+        Data Structures	        2023	Computer Science	1	3.700000
+            	                        2023	Computer Science	1	3.700000
+            	                            	Computer Science	4	3.425000
         Database Management	        2022	Mathematics	        1	3.300000
-        Genetics	                    2022	Mathematics	        1	4.000000
-        Linear Algebra	            2022	Mathematics	        1	3.700000
-        NULL	                        2022	Mathematics	        3	3.666666
+        Genetics	                2022	Mathematics	        1	4.000000
+        Linear Algebra	        2022	Mathematics	        1	3.700000
+            	                        2022	Mathematics	        3	3.666666
         Algorithms	                2023	Mathematics	        1	4.000000
-        NULL	                        2023	Mathematics	        1	4.000000
-        NULL	                        NULL	Mathematics	        4	3.750000
+            	                        2023	Mathematics	        1	4.000000
+            	                            	Mathematics	        4	3.750000
         Classical Mechanics	        2022	Physics	            1	4.000000
-        Electromagnetism	            2022	Physics	            1	4.000000
-        Organic Chemistry	            2022	Physics	            1	3.300000
-        NULL	                        2022	Physics	            3	3.766666
+        Electromagnetism	        2022	Physics	            1	4.000000
+        Organic Chemistry	        2022	Physics	            1	3.300000
+            	                        2022	Physics	            3	3.766666
         Algorithms	                2023	Physics	            1	2.700000
-        NULL	                        2023	Physics	            1	2.700000
-        NULL	                        NULL	Physics	            4	3.500000
-        NULL	                        NULL	NULL	            12	3.558333
-        Algorithms	                NULL	Mathematics	        1	4.000000
-        Algorithms	                NULL	Physics	            1	2.700000
-        Algorithms	                NULL	NULL	            2	3.350000
-        Calculus I	                NULL	Computer Science	1	3.000000
-        Calculus I	                NULL	NULL	            1	3.000000
-        Classical Mechanics	        NULL	Physics	            1	4.000000
-        Classical Mechanics	        NULL	NULL	            1	4.000000
-        Data Structures	            NULL	Computer Science	1	3.700000
-        Data Structures	            NULL	NULL	            1	3.700000
-        Database Management	        NULL	Mathematics	        1	3.300000
-        Database Management	        NULL	NULL	            1	3.300000
-        Electromagnetism	            NULL	Physics	            1	4.000000
-        Electromagnetism	            NULL	NULL	            1	4.000000
-        Genetics	                    NULL	Mathematics	        1	4.000000
-        Genetics	                    NULL	NULL	            1	4.000000
-        Introduction to Programming	NULL	Computer Science	1	4.000000
-        Introduction to Programming	NULL	NULL	            1	4.000000
-        Linear Algebra	            NULL	Mathematics	        1	3.700000
-        Linear Algebra	            NULL	NULL	            1	3.700000
-        Organic Chemistry	            NULL	Computer Science	1	3.000000
-        Organic Chemistry	            NULL	Physics	            1	3.300000
-        Organic Chemistry	            NULL	NULL	            2	3.150000
-        Calculus I	                2022	NULL	            1	3.000000
-        Classical Mechanics	        2022	NULL	            1	4.000000
-        Database Management	        2022	NULL	            1	3.300000
-        Electromagnetism	            2022	NULL	            1	4.000000
-        Genetics	                    2022	NULL	            1	4.000000
-        Introduction to Programming	2022	NULL	            1	4.000000
-        Linear Algebra	            2022	NULL	            1	3.700000
-        Organic Chemistry	            2022	NULL	            2	3.150000
-        NULL	                        2022	NULL	            9	3.588888
-        Algorithms	                2023	NULL	            2	3.350000
-        Data Structures	            2023	NULL	            1	3.700000
-        NULL	                        2023	NULL	            3	3.466666
+            	                        2023	Physics	            1	2.700000
+            	                            	Physics	            4	3.500000
+            	                            	    	            12	3.558333
+        Algorithms	                    	Mathematics	        1	4.000000
+        Algorithms	                    	Physics	            1	2.700000
+        Algorithms	                    	    	            2	3.350000
+        Calculus I	                    	Computer Science	1	3.000000
+        Calculus I	                    	    	            1	3.000000
+        Classical Mechanics	            	Physics	            1	4.000000
+        Classical Mechanics	            	    	            1	4.000000
+        Data Structures	                Computer Science	1	3.700000
+        Data Structures	                	    	        1	3.700000
+        Database Management	            	Mathematics	        1	3.300000
+        Database Management	            	    	            1	3.300000
+        Electromagnetism	                Physics	            1	4.000000
+        Electromagnetism	                	    	        1	4.000000
+        Genetics	                        Mathematics	        1	4.000000
+        Genetics	                        	    	        1	4.000000
+        Introduction to Programming	    	Computer Science	1	4.000000
+        Introduction to Programming	    	    	            1	4.000000
+        Linear Algebra	                Mathematics	        1	3.700000
+        Linear Algebra	                	    	        1	3.700000
+        Organic Chemistry	               Computer Science	1	3.000000
+        Organic Chemistry	                Physics	            1	3.300000
+        Organic Chemistry	                	    	        2	3.150000
+        Calculus I	                2022	    	            1	3.000000
+        Classical Mechanics	        2022	    	            1	4.000000
+        Database Management	        2022	    	            1	3.300000
+        Electromagnetism	        2022	    	            1	4.000000
+        Genetics	                2022	    	            1	4.000000
+        Introduction to Programming	2022	    	            1	4.000000
+        Linear Algebra	        2022	    	            1	3.700000
+        Organic Chemistry	        2022	    	            2	3.150000
+            	                        2022	    	            9	3.588888
+        Algorithms	                2023	    	            2	3.350000
+        Data Structures	        2023	    	            1	3.700000
+            	                        2023	    	            3	3.466666
+
+## Result Reports with Charts or Graphs
+
+### a. Data Visualization:
+
+Using PowerBI, the database is connected so graphs and diagrams are generated to visualize the data.
+
+In visuals directory a dataVisualization.pbix file is present and contains multiple graphs to show data visually to be more live and analytic.
+
+
+---
+
+**You can fill in the specific SQL scripts and details based on your implementation. If you encounter any challenges or specific points you want to highlight, include them in the documentation.**
